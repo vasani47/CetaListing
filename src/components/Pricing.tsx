@@ -129,10 +129,10 @@ export default function Pricing() {
           <span>⟵ Swipe left or right to explore plans ⟶</span>
         </div>
 
-        {/* Pricing Layout Container: Horizontal Scroll on Mobile, 2 Columns on Tablet, 3 Columns on Desktop */}
+        {/* Pricing Layout Container: Horizontal Scroll on Mobile, Flex Wrap on Tablet for centering, 3 Columns on Desktop */}
         <div 
           ref={containerRef}
-          className="flex overflow-x-auto snap-x snap-mandatory gap-6 pt-8 pb-8 px-8 md:px-0 -mx-4 md:mx-0 md:overflow-visible md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8 items-stretch max-w-6xl mx-auto scroll-smooth scrollbar-none"
+          className="flex overflow-x-auto snap-x snap-mandatory gap-6 pt-8 pb-8 px-8 md:px-0 -mx-4 md:mx-auto md:overflow-visible md:flex md:flex-row md:flex-wrap md:justify-center lg:grid lg:grid-cols-3 md:gap-6 lg:gap-8 items-stretch max-w-6xl mx-auto scroll-smooth scrollbar-none justify-center justify-items-center"
           id="pricing-grid"
         >
           
@@ -142,7 +142,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-[80vw] max-w-[340px] sm:max-w-[360px] md:w-full md:max-w-none shrink-0 md:shrink snap-center md:snap-align-none pricing-card-slide neumorphic-flat rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden border border-border-subtle/10 hover:scale-[1.01] transition-all duration-300"
+            className="w-[80vw] max-w-[340px] sm:max-w-[360px] md:w-[340px] lg:w-full shrink-0 snap-center md:snap-align-none pricing-card-slide neumorphic-flat rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden border border-border-subtle/10 hover:scale-[1.01] transition-all duration-300"
             id="plan-yearly"
           >
             <div>
@@ -185,7 +185,7 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="w-[80vw] max-w-[340px] sm:max-w-[360px] md:w-full md:max-w-none shrink-0 md:shrink snap-center md:snap-align-none pricing-card-slide rounded-3xl p-[2.5px] bg-gradient-to-r from-brand-violet via-brand-indigo to-brand-cyan animate-border-gradient flex flex-col relative hover:scale-[1.02] md:scale-[1.03] md:z-10 transition-all duration-300 shadow-[0_0_30px_-5px_rgba(139,92,246,0.3)] dark:shadow-[0_0_40px_-5px_rgba(139,92,246,0.2)]"
+            className="w-[80vw] max-w-[340px] sm:max-w-[360px] md:w-[340px] lg:w-full shrink-0 snap-center md:snap-align-none pricing-card-slide rounded-3xl p-[2.5px] bg-gradient-to-r from-brand-violet via-brand-indigo to-brand-cyan animate-border-gradient flex flex-col relative hover:scale-[1.02] md:scale-[1.03] md:z-10 transition-all duration-300 shadow-[0_0_30px_-5px_rgba(139,92,246,0.3)] dark:shadow-[0_0_40px_-5px_rgba(139,92,246,0.2)]"
             id="plan-lifetime"
           >
             {/* Elegant Purple Floating Badge at top-center of the card */}
@@ -240,24 +240,29 @@ export default function Pricing() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="w-[80vw] max-w-[340px] sm:max-w-[360px] md:w-full md:max-w-none md:col-span-2 lg:col-span-1 md:max-w-xl md:mx-auto lg:w-full lg:max-w-none shrink-0 md:shrink snap-center md:snap-align-none pricing-card-slide neumorphic-inset opacity-85 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden border border-dashed border-border-subtle/30"
+            className="w-[80vw] max-w-[340px] sm:max-w-[360px] md:w-[340px] lg:w-full shrink-0 snap-center md:snap-align-none pricing-card-slide rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden bg-[#0F172A] dark:bg-[#070914] text-white border border-slate-800 shadow-[0_10px_30px_rgba(139,92,246,0.15)] hover:scale-[1.01] transition-all duration-300"
             id="plan-ultimate"
           >
+            {/* Elegant glassmorphic badge */}
+            <div className="absolute top-4 right-4 bg-purple-500/15 text-purple-300 text-[9px] font-black tracking-widest uppercase py-1 px-2.5 rounded-full border border-purple-500/20 shadow-sm">
+              DEV PREVIEW
+            </div>
+
             <div>
-              <span className="text-xs font-semibold text-txt-m uppercase tracking-widest font-mono block mb-2">ULTIMATE BUNDLE</span>
+              <span className="text-xs font-bold text-purple-400 uppercase tracking-widest font-mono block mb-2">ULTIMATE BUNDLE</span>
               <div className="flex items-baseline gap-1.5 mb-6">
-                <span className="text-4xl sm:text-5xl font-heading font-extrabold text-txt-m font-numbers">₹499</span>
-                <span className="text-txt-s text-sm font-sans">/ lifetime</span>
+                <span className="text-4xl sm:text-5xl font-heading font-extrabold text-white font-numbers">₹499</span>
+                <span className="text-slate-400 text-sm font-sans">/ lifetime</span>
               </div>
-              <p className="text-xs text-txt-s font-sans mb-8 leading-relaxed">
+              <p className="text-xs text-slate-300 font-sans mb-8 leading-relaxed">
                 The ultimate automation suite. Currently under developer preview and NOT for individual purchase. Preview upcoming features below.
               </p>
 
               {/* Standard features block in Ultimate */}
               <div className="space-y-3 mb-6">
-                <span className="text-[10px] font-bold text-txt-m font-mono tracking-widest uppercase block mb-1">INCLUDES ALL PLANS</span>
-                <div className="flex items-center gap-2.5 text-xs text-txt-s italic">
-                  <Check size={13} className="text-txt-m shrink-0" />
+                <span className="text-[10px] font-bold text-slate-400 font-mono tracking-widest uppercase block mb-1">INCLUDES ALL PLANS</span>
+                <div className="flex items-center gap-2.5 text-xs text-slate-300 italic">
+                  <Check size={13} className="text-purple-400 shrink-0" />
                   <span>All Yearly & Lifetime features included</span>
                 </div>
               </div>
@@ -266,17 +271,17 @@ export default function Pricing() {
               <div className="space-y-4 mb-8">
                 <span className="text-[10px] font-bold text-brand-cyan font-mono tracking-widest uppercase block mb-2">COMING SOON FEATURES</span>
                 {comingSoonFeatures.map((feat) => (
-                  <div key={feat} className="flex items-start gap-2.5 text-xs text-txt-s">
+                  <div key={feat} className="flex items-start gap-2.5 text-xs text-slate-300">
                     <Sparkles size={13} className="text-brand-cyan shrink-0 mt-0.5 animate-pulse" />
-                    <span className="text-txt-s">{feat}</span>
+                    <span>{feat}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-auto pt-6 border-t border-border-subtle/20">
+            <div className="mt-auto pt-6 border-t border-slate-800">
               <div className="w-full py-4 px-6 rounded-2xl text-xs font-semibold text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center gap-2 select-none">
-                <AlertCircle size={14} className="animate-spin" />
+                <AlertCircle size={14} className="animate-pulse" />
                 All Features Included – Coming Soon
               </div>
             </div>

@@ -228,7 +228,7 @@ export default function Videos() {
         {selectedVideoDetails && (() => {
           const det = VIDEO_DETAILS[selectedVideoDetails.id] || VIDEO_DETAILS.v1;
           return (
-            <div className="fixed inset-0 z-50 flex items-center justify-center px-4 overflow-y-auto py-8" id="video-details-backdrop">
+            <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 overflow-y-auto py-8" id="video-details-backdrop">
               {/* Dark background blur overlay */}
               <motion.div 
                 initial={{ opacity: 0 }}
@@ -431,7 +431,7 @@ export default function Videos() {
       {/* POPUP MODAL 2: High-Fidelity Custom Walkthrough Playback Modal */}
       <AnimatePresence>
         {selectedWalkthrough && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center px-4 overflow-y-auto py-8" id="video-modal-backdrop">
+          <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 overflow-y-auto py-8" id="video-modal-backdrop">
             {/* Dark background blur overlay */}
             <motion.div 
               initial={{ opacity: 0 }}
@@ -736,7 +736,7 @@ export default function Videos() {
                     <div className="flex items-start gap-2.5">
                       <div className="w-5 h-5 rounded-full bg-brand-violet/10 border border-brand-violet/25 flex items-center justify-center text-[10px] text-brand-violet font-bold font-mono mt-0.5 shrink-0">3</div>
                       <p className="text-xs text-txt-s font-sans font-light">
-                        <strong className="text-txt-p font-semibold">Surat Wholesaler Optimized:</strong> Built with instant sizing templates specifically configured for Indian ethnic, sarees, and kurtis wear formats.
+                        <strong className="text-txt-p font-semibold">Size Field Mapping:</strong> Automatically fill corresponding catalog sizes directly into the listing form's size fields.
                       </p>
                     </div>
                   </div>
@@ -746,10 +746,10 @@ export default function Videos() {
                       href="https://wa.me/919999999999?text=Hi,%0AI%20want%20CetaListing%20Extension."
                       target="_blank"
                       referrerPolicy="no-referrer"
-                      className="w-full flex items-center justify-center gap-2 py-3 bg-[#ff477e] hover:bg-[#e03165] rounded-xl text-xs font-bold text-white transition-colors"
+                      className="w-full flex items-center justify-center gap-2 py-3 bg-[#7c3aed] hover:bg-[#6d28d9] rounded-xl text-xs font-bold text-white transition-colors"
                     >
                       <Download size={14} />
-                      Download Extension Now (FREE)
+                      Download Extension Now
                     </a>
                   </div>
                 </div>

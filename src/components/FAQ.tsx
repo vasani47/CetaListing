@@ -256,13 +256,13 @@ export default function FAQ() {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-left space-y-1">
                 <span className="text-[10px] font-extrabold text-[#ff477e] uppercase tracking-wider font-sans">
-                  Custom Template Needs?
+                  Need Quick Assistance?
                 </span>
                 <h4 className="text-base sm:text-lg font-bold text-txt-p">
-                  Need custom ethnic wear size templates?
+                  Have questions about Ceta Listing?
                 </h4>
                 <p className="text-xs sm:text-sm text-txt-s font-sans font-light">
-                  Our catalog experts can design bespoke mappings for your Surat wholesale listing.
+                  Our friendly support team is ready to assist you with installation, setup, or any usage questions.
                 </p>
               </div>
 

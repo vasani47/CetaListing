@@ -140,7 +140,7 @@ export default function Navbar() {
             href={WHATSAPP_LINK}
             target="_blank"
             referrerPolicy="no-referrer"
-            className="px-5 py-2.5 rounded-full text-xs font-semibold bg-[#ff477e] hover:bg-[#e03165] text-white shadow-lg shadow-[#ff477e]/15 transition-all duration-300 flex items-center gap-2 group"
+            className="px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-[#2E3192] to-[#ff477e] hover:from-[#1F216B] hover:to-[#e03165] text-white shadow-lg shadow-[#ff477e]/15 hover:shadow-[#ff477e]/25 transition-all duration-300 flex items-center gap-2 group"
             id="navbar-whatsapp-button"
           >
             <MessageSquare size={13} className="fill-white/20" />
@@ -154,7 +154,7 @@ export default function Navbar() {
           <ThemeToggle />
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="text-txt-s hover:text-txt-p p-2 focus:outline-none"
+            className="text-txt-s hover:text-txt-p p-2 focus:outline-none cursor-pointer hover:scale-110 active:scale-95 transition-transform duration-200"
             aria-label="Toggle Menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -194,7 +194,7 @@ export default function Navbar() {
                 target="_blank"
                 referrerPolicy="no-referrer"
                 onClick={() => setIsOpen(false)}
-                className="w-full flex items-center justify-center gap-2.5 py-4 bg-[#ff477e] hover:bg-[#e03165] active:scale-98 rounded-xl text-sm font-bold text-white shadow-xl shadow-[#ff477e]/20 transition-all"
+                className="w-full flex items-center justify-center gap-2.5 py-4 bg-gradient-to-r from-[#2E3192] to-[#ff477e] hover:from-[#1F216B] hover:to-[#e03165] active:scale-98 rounded-xl text-sm font-bold text-white shadow-xl shadow-[#ff477e]/20 transition-all"
               >
                 <MessageSquare size={16} className="fill-white/10" />
                 <span>Download Extension</span>

@@ -49,7 +49,7 @@ export default function App() {
         <Navbar />
 
         {/* Main Sections */}
-        <main className="relative z-10" id="main-content-wrapper">
+        <main className="relative" id="main-content-wrapper">
           <Hero />
           <MarketplacesMarquee />
           <Trust />
