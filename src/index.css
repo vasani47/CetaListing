@@ -219,6 +219,37 @@
   }
 }
 
+/* Animated Walking Border Component */
+@keyframes border-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.walking-border-wrapper {
+  position: relative;
+  padding: 2px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.walking-border-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 180%;
+  height: 180%;
+  background: conic-gradient(
+    from 0deg,
+    #ff477e,
+    #2E3192,
+    #ff477e
+  );
+  animation: border-spin 4s linear infinite;
+}
+
 body {
   background-color: var(--brand-bg);
   color: var(--text-primary);

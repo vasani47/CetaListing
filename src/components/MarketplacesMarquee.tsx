@@ -164,7 +164,7 @@ export default function MarketplacesMarquee() {
               Built for Meesho Sellers
             </h4>
             <p className="text-xs text-txt-s mt-0.5 font-sans font-light">
-              Automate. Save Time. Grow More. Optimized natively to handle Surat textile listing requirements instantly.
+              Automate. Save Time. Grow More. Optimized natively to handle eCommerce listing requirements instantly.
             </p>
           </div>
         </div>

@@ -13,7 +13,7 @@ const VIDEO_DETAILS: Record<string, {
 }> = {
   v1: {
     overview: "This video guides you through extracting and uploading the CetaListing secure extension pack directly into your Google Chrome browser's developer mode interface.",
-    target: "Surat wholesalers, brand admins, and single-operator store managers.",
+    target: "Wholesalers, brand admins, and single-operator store managers.",
     chapters: [
       { time: "0:00 - 0:25", title: "Unpacking & Extraction", desc: "Downloading the local files pack onto your computer and extracting files safely." },
       { time: "0:25 - 0:50", title: "Opening Extension Dashboard", desc: "Accessing chrome://extensions directly in the URL bar." },
@@ -599,7 +599,7 @@ export default function Videos() {
                             <div className="flex justify-between items-center bg-brand-bg p-2 rounded border border-border-subtle">
                               <span className="text-txt-m">Fabric Material:</span>
                               <span className={fillState !== "idle" ? "text-brand-indigo font-semibold" : "text-txt-m"}>
-                                {fillState === "idle" ? "Empty" : "100% Pure Surat Cotton"}
+                                {fillState === "idle" ? "Empty" : "100% Pure Premium Cotton"}
                               </span>
                             </div>
                             <div className="flex justify-between items-center bg-brand-bg p-2 rounded border border-border-subtle">

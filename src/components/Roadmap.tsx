@@ -25,7 +25,8 @@ import {
   Clock,
   ArrowRight,
   Palette,
-  RefreshCw
+  RefreshCw,
+  AlertCircle
 } from "lucide-react";
 import { ROADMAP_ITEMS } from "../data";
 
@@ -132,7 +133,7 @@ export default function Roadmap() {
               <div className="space-y-2 bg-brand-bg/55 p-3 rounded-xl border border-border-subtle/40">
                 <div className="flex items-center gap-2 text-xs text-txt-p">
                   <CheckCircle2 size={13} className="text-brand-violet shrink-0" />
-                  <span>1-Click Form Filling (Meesho & Flipkart ready)</span>
+                  <span>1-Click Form Filling (Meesho ready)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-txt-p">
                   <CheckCircle2 size={13} className="text-brand-violet shrink-0" />
@@ -184,7 +185,7 @@ export default function Roadmap() {
               </div>
 
               <p className="text-[11px] text-txt-m mt-4 leading-relaxed font-sans font-light">
-                Every Surat textile wholesaler who sets up our lightweight local extension joins this active list. As the community hits 1000 users, we will unlock our central AI Vision suite automatically!
+                Every wholesaler and manufacturer who sets up our lightweight local extension joins this active list. As the community hits 1000 users, we will unlock our central AI Vision suite automatically!
               </p>
             </div>
 
@@ -265,21 +266,28 @@ export default function Roadmap() {
 
                         {/* Status Lock/Development indicator */}
                         <div className="shrink-0 pt-0.5">
-                          {item.status === "in-development" ? (
-                            <span className="text-[9px] font-bold font-mono uppercase tracking-wider bg-amber-500/10 border border-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full animate-pulse whitespace-nowrap">
-                              In Dev
-                            </span>
-                          ) : (
-                            <span className="text-[9px] font-bold font-mono uppercase tracking-wider bg-zinc-100 dark:bg-zinc-900/50 text-txt-m border border-border-subtle/40 px-2 py-0.5 rounded-full flex items-center gap-1 whitespace-nowrap">
-                              <Lock size={8} /> Locked
-                            </span>
-                          )}
+                          <span className="text-[9px] font-bold font-mono uppercase tracking-wider bg-amber-500/10 border border-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full animate-pulse whitespace-nowrap">
+                            In Dev
+                          </span>
                         </div>
 
                       </div>
                     ))}
                   </motion.div>
                 </AnimatePresence>
+              </div>
+
+              {/* Feasibility and Development Note Disclaimer */}
+              <div className="mt-5 p-4 rounded-2xl bg-amber-500/5 dark:bg-amber-500/10 border border-amber-500/10 text-txt-s">
+                <div className="flex gap-2.5 items-start">
+                  <AlertCircle size={15} className="text-amber-500 shrink-0 mt-0.5" />
+                  <div className="space-y-1">
+                    <span className="text-[10px] font-bold text-amber-500 font-mono tracking-wider uppercase block">Development & Feasibility Disclaimer</span>
+                    <p className="text-[11px] leading-relaxed text-slate-300">
+                      We are currently developing all features. Please note that only technically feasible features will be included in the upcoming version. Because all these features are under development and review, we cannot claim that all features will come with the new updates—only feasible features are coming.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Action bottom info */}

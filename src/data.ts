@@ -3,7 +3,7 @@ import { Review, FeatureItem, VideoItem, RoadmapItem, FAQItem } from "./types";
 export const SAMPLE_REVIEWS: Review[] = [
   {
     id: "r1",
-    author: "Surat Fashion Hub",
+    author: "Apex Fashion Hub",
     business: "Saree & Kurtis Wholesaler",
     rating: 5,
     text: "Pehle ek catalog banane me 15-20 minute lagte the. Ab sirf 2 minute me ho jata hai. Time bahut save hota hai."
@@ -160,7 +160,7 @@ export const ROADMAP_ITEMS: RoadmapItem[] = [
   },
   {
     id: "rm8",
-    title: "Flipkart & Amazon Integrations",
+    title: "Amazon & Multi-Channel Integrations",
     desc: "Complete cross-marketplace catalog copy paste and multi-form automated mapping.",
     status: "locked"
   },
@@ -205,6 +205,12 @@ export const ROADMAP_ITEMS: RoadmapItem[] = [
     title: "AI Listing Quality Score",
     desc: "Analyze listing health metrics, image clarity, and description depth before hitting publish.",
     status: "locked"
+  },
+  {
+    id: "rm16",
+    title: "Low Shipping AI Optimization",
+    desc: "Analyze and optimize packaging sizes and weights to trigger the lowest possible shipping slab rates on Meesho.",
+    status: "in-development"
   }
 ];
 
@@ -222,7 +228,7 @@ export const FAQS: FAQItem[] = [
   {
     id: "q3",
     question: "Is CetaListing safe to use on Meesho?",
-    answer: "Yes, CetaListing is completely safe and fully compliant with security standards. Unlike typical automation bots that make unauthorized backend API calls, CetaListing acts as a local UI assistant. It simulates human keystrokes locally within your browser, never requests or stores your seller account password, and operates entirely off a secure Chrome local database. This guarantees 100% security with zero risk of Meesho bans."
+    answer: "Yes, CetaListing is fully secure and respects standard web security guidelines. Unlike web automation bots that make unauthorized background server calls, CetaListing functions solely as a local user interface assistant. It assists by automating data entry locally within your active browser tab, never requests or stores your seller account passwords, and saves all your data strictly on your own device's secure local database."
   },
   {
     id: "q4",

@@ -85,7 +85,7 @@ export default function CTA() {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan font-mono text-xs font-semibold uppercase tracking-wider w-fit"
             >
               <Zap size={12} className="fill-brand-cyan" />
-              <span>JOIN THE SURAT ECOMMERCE REVOLUTION</span>
+              <span>JOIN THE ECOMMERCE REVOLUTION</span>
             </motion.div>
 
             <motion.h2 

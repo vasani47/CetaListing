@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { Check, Sparkles, MessageSquare, AlertCircle } from "lucide-react";
+import { Check, Sparkles, MessageSquare, AlertCircle, ArrowRight } from "lucide-react";
 
 export default function Pricing() {
   const yearlyMessage = encodeURIComponent("I want to purchase the Yearly Plan (RS199/year).");
@@ -13,7 +13,7 @@ export default function Pricing() {
     "1-Click Auto Fill on Meesho Portal",
     "Smart Field Capture (Remembers Mappings)",
     "Secure Chrome Local Storage Database",
-    "Unlimited Product Templates & Profiles",
+    "Unlimited Product Profiles",
     "Element Self-Healing Selector Engine",
     "Skip Existing Fields Safety Guard",
     "JSON Import/Export Team Sharing",
@@ -24,7 +24,9 @@ export default function Pricing() {
     "AI Image Background Remover (1-Click)",
     "AI SEO Description & Tag Generator",
     "Bulk Catalog Upload via Excel Queue",
-    "Flipkart & Amazon Cross-Marketplace Sync",
+    "Amazon Cross-Marketplace Sync",
+    "Low Shipping AI Optimization",
+    "AI Image Generation & Model Mockups",
   ];
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -251,7 +253,7 @@ export default function Pricing() {
             <div>
               <span className="text-xs font-bold text-purple-400 uppercase tracking-widest font-mono block mb-2">ULTIMATE BUNDLE</span>
               <div className="flex items-baseline gap-1.5 mb-6">
-                <span className="text-4xl sm:text-5xl font-heading font-extrabold text-white font-numbers">₹499</span>
+                <span className="text-4xl sm:text-5xl font-heading font-extrabold text-white font-numbers">₹1499*</span>
                 <span className="text-slate-400 text-sm font-sans">/ lifetime</span>
               </div>
               <p className="text-xs text-slate-300 font-sans mb-8 leading-relaxed">
@@ -268,7 +270,7 @@ export default function Pricing() {
               </div>
 
               {/* Coming Soon Features block in Ultimate */}
-              <div className="space-y-4 mb-8">
+              <div className="space-y-4 mb-6">
                 <span className="text-[10px] font-bold text-brand-cyan font-mono tracking-widest uppercase block mb-2">COMING SOON FEATURES</span>
                 {comingSoonFeatures.map((feat) => (
                   <div key={feat} className="flex items-start gap-2.5 text-xs text-slate-300">
@@ -276,6 +278,21 @@ export default function Pricing() {
                     <span>{feat}</span>
                   </div>
                 ))}
+              </div>
+
+              {/* View More / Roadmap Button */}
+              <div className="mb-8">
+                <a
+                  href="#roadmap"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("roadmap")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="w-full py-3 px-4 rounded-xl text-xs font-bold text-[#38bdf8] hover:text-white bg-slate-800/40 hover:bg-slate-800 border border-slate-700/50 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer"
+                >
+                  <span>View More on Roadmap</span>
+                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </a>
               </div>
             </div>
 

@@ -56,7 +56,7 @@ export default function Features() {
               <span className="text-pink-400 font-bold animate-pulse">● CAPTURING</span>
             </div>
             <div className="text-zinc-300 mt-2">&gt; Clicked Saree Material dropdown</div>
-            <div className="text-pink-400 font-semibold">&gt; Saved Choice: pure_silk_surat ✓</div>
+            <div className="text-pink-400 font-semibold">&gt; Saved Choice: pure_silk_saree ✓</div>
           </div>
           <div className="text-zinc-600 text-[9px]">Saved to Local Mappings DB</div>
         </div>
@@ -265,7 +265,7 @@ export default function Features() {
             Smarter Fields, <span className="bg-gradient-to-r from-brand-violet via-brand-indigo to-brand-cyan bg-clip-text text-transparent">Faster Listing</span>
           </h2>
           <p className="text-base text-txt-s mt-4 font-sans font-light max-w-xl mx-auto">
-            A specialized utility toolkit developed exclusively to automate the Surat wholesale listing workload. Explore manual capture speeds today and preview our AI roadmap.
+            A specialized utility toolkit developed exclusively to automate the wholesale listing workload. Explore manual capture speeds today and preview our AI roadmap.
           </p>
         </div>
 

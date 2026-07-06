@@ -7,10 +7,13 @@ export default function Footer() {
 
   const handleSmoothScroll = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    window.location.hash = href;
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 50);
   };
 
   return (
@@ -78,9 +81,9 @@ export default function Footer() {
             CetaListing is an independent software extension and utility. We are <strong>not</strong> affiliated with, endorsed by, sponsored by, or partner of Meesho Inc., Flipkart Commerce, or Amazon India. All registered trademarks, portal titles, and company names listed on this website belong strictly to their respective owners.
           </p>
           <div className="flex items-center gap-4 mt-4 text-[10px] text-txt-m">
-            <span className="hover:text-txt-p transition-colors cursor-pointer">Privacy Policy</span>
+            <a href="#/privacy" className="hover:text-txt-p transition-colors cursor-pointer">Privacy Policy</a>
             <span className="h-3 w-px bg-border-subtle" />
-            <span className="hover:text-txt-p transition-colors cursor-pointer">Terms of Service</span>
+            <a href="#/terms" className="hover:text-txt-p transition-colors cursor-pointer">Terms of Service</a>
           </div>
         </div>
       </div>

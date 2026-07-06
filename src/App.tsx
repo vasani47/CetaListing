@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MarketplacesMarquee from "./components/MarketplacesMarquee";
@@ -11,9 +11,33 @@ import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/TermsOfService";
 import { ThemeProvider } from "./context/ThemeContext";
 
 export default function App() {
+  const [currentView, setCurrentView] = useState<"home" | "privacy" | "terms">("home");
+
+  // Track hash changes for routing
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === "#/privacy" || hash === "#privacy" || hash === "#privacy-policy") {
+        setCurrentView("privacy");
+        window.scrollTo({ top: 0, behavior: "auto" });
+      } else if (hash === "#/terms" || hash === "#terms" || hash === "#terms-of-service") {
+        setCurrentView("terms");
+        window.scrollTo({ top: 0, behavior: "auto" });
+      } else {
+        setCurrentView("home");
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
   // Track mouse coordinates globally to render high-performance Cursor Glow with zero React re-renders
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -50,16 +74,24 @@ export default function App() {
 
         {/* Main Sections */}
         <main className="relative" id="main-content-wrapper">
-          <Hero />
-          <MarketplacesMarquee />
-          <Trust />
-          <Features />
-          <Videos />
-          <Pricing />
-          <FAQ />
-          <Roadmap />
-          <Manifesto />
-          <CTA />
+          {currentView === "home" ? (
+            <>
+              <Hero />
+              <MarketplacesMarquee />
+              <Trust />
+              <Features />
+              <Videos />
+              <Pricing />
+              <FAQ />
+              <Roadmap />
+              <Manifesto />
+              <CTA />
+            </>
+          ) : currentView === "privacy" ? (
+            <PrivacyPolicy />
+          ) : (
+            <TermsOfService />
+          )}
         </main>
 
         {/* Footer Branding & Disclaimer */}

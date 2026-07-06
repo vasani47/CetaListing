@@ -8,7 +8,7 @@ export default function Trust() {
   const autoPlayRef = useRef<(() => void) | null>(null);
 
   const companies = [
-    { name: "Surat Fashion Hub", sub: "Saree Wholesaler" },
+    { name: "Apex Fashion Hub", sub: "Saree Wholesaler" },
     { name: "Textile Commerce Co.", sub: "Ethnic Designer" },
     { name: "Urban Garments Seller", sub: "Western Apparel" },
     { name: "Diamond City Apparel", sub: "Kids Wear House" },
@@ -55,10 +55,10 @@ export default function Trust() {
               <span className="text-sm font-bold font-numbers ml-2 text-txt-p">4.5 / 5 Rating</span>
             </div>
             <h2 className="text-3xl font-heading font-extrabold text-txt-p tracking-tight">
-              Trusted by <span className="bg-gradient-to-r from-brand-indigo via-brand-violet to-brand-cyan bg-clip-text text-transparent font-numbers">19+</span> Surat eCommerce Sellers
+              Trusted by <span className="bg-gradient-to-r from-brand-indigo via-brand-violet to-brand-cyan bg-clip-text text-transparent font-numbers">19+</span> eCommerce Sellers
             </h2>
             <p className="text-sm text-txt-s mt-2 font-sans font-light">
-              Accelerating listing catalog speed for Gujarat's premier apparel manufacturers, weavers, and fabric hubs.
+              Accelerating listing catalog speed for premier apparel manufacturers, weavers, and fabric hubs.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function Trust() {
 
           {/* Testimonial disclosure statement to avoid fictional fact representation */}
           <div className="mt-8 text-[9px] text-txt-m font-mono text-center opacity-80">
-            * TESTIMONIAL DISCLOSURE: These are illustrative sample testimonials based on typical workflow optimizations experienced by Surat apparel sellers.
+            * TESTIMONIAL DISCLOSURE: These are illustrative sample testimonials based on typical workflow optimizations experienced by eCommerce apparel sellers.
           </div>
         </div>
       </div>

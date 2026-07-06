@@ -8,10 +8,70 @@ import {
 import { WHATSAPP_LINK } from "./Navbar";
 
 const PRODUCTS = [
-  { id: "p1", name: "Product1", fields: 8, title: "Surat Cotton Printed Saree", fabric: "Pure Cotton", occasion: "Casual Wear", sizes: ["M", "L", "XL"] },
-  { id: "p2", name: "Product2", fields: 10, title: "Designer Georgette Saree", fabric: "Pure Georgette", occasion: "Festival", sizes: ["Free Size"] },
-  { id: "p3", name: "Product3", fields: 12, title: "Embroidered Silk Kurta Set", fabric: "Chanderi Silk", occasion: "Party / Wedding", sizes: ["S", "M", "L", "XL"] },
-  { id: "p4", name: "Product4", fields: 15, title: "Premium Banarasi Silk Saree", fabric: "Banarasi Silk", occasion: "Traditional", sizes: ["Free Size"] }
+  { 
+    id: "p1", 
+    name: "Product1", 
+    fields: 8, 
+    title: "Printed Cotton Saree", 
+    fabric: "Pure Cotton", 
+    occasion: "Casual Wear", 
+    sizes: ["M", "L", "XL"],
+    gst: "5%",
+    hsn: "520811",
+    weight: "320",
+    styleCode: "CETA-SRE-COT",
+    price: 299,
+    color: "Indigo Blue",
+    genericName: "Sarees"
+  },
+  { 
+    id: "p2", 
+    name: "Product2", 
+    fields: 10, 
+    title: "Designer Georgette Saree", 
+    fabric: "Pure Georgette", 
+    occasion: "Festival", 
+    sizes: ["Free Size"],
+    gst: "5%",
+    hsn: "540752",
+    weight: "280",
+    styleCode: "CETA-SRE-GEO",
+    price: 499,
+    color: "Peach Pink",
+    genericName: "Sarees"
+  },
+  { 
+    id: "p3", 
+    name: "Product3", 
+    fields: 12, 
+    title: "Embroidered Silk Kurta Set", 
+    fabric: "Chanderi Silk", 
+    occasion: "Party / Wedding", 
+    sizes: ["S", "M", "L", "XL"],
+    gst: "12%",
+    hsn: "621139",
+    weight: "450",
+    styleCode: "CETA-KRT-SLK",
+    price: 799,
+    color: "Royal Violet",
+    genericName: "Kurta Sets"
+  },
+  { 
+    id: "p4", 
+    name: "Product4", 
+    fields: 15, 
+    title: "Premium Banarasi Silk Saree", 
+    fabric: "Banarasi Silk", 
+    occasion: "Traditional", 
+    sizes: ["Free Size"],
+    gst: "5%",
+    hsn: "500720",
+    weight: "580",
+    styleCode: "CETA-SRE-BAN",
+    price: 1299,
+    color: "Maroon Gold",
+    genericName: "Sarees"
+  }
 ];
 
 export default function Hero() {
@@ -142,36 +202,36 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-3 max-w-lg" 
+              className="space-y-4 max-w-lg mt-6" 
               id="hero-features-list"
             >
-              <div className="flex items-center gap-3.5 p-3 rounded-2xl bg-brand-card dark:bg-brand-card/40 border border-border-subtle hover:border-brand-indigo/20 shadow-sm transition-all duration-300">
-                <div className="w-10 h-10 rounded-xl bg-brand-indigo/10 flex items-center justify-center shrink-0">
-                  <Zap size={18} className="text-brand-indigo animate-pulse" />
+              <div className="flex items-start gap-4 p-2.5 rounded-xl hover:bg-white/5 dark:hover:bg-white/5 transition-all duration-300 group">
+                <div className="w-8 h-8 rounded-lg bg-brand-indigo/10 border border-brand-indigo/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Zap size={14} className="text-brand-indigo group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-txt-p">1-Click Auto-Listing Copier</h3>
-                  <p className="text-xs text-txt-m">Instantly copy catalog specifications and auto-fill Meesho forms</p>
+                  <h3 className="text-sm font-semibold text-txt-p group-hover:text-brand-indigo transition-colors duration-300">1-Click Auto-Listing Copier</h3>
+                  <p className="text-xs text-txt-m mt-0.5 leading-relaxed">Instantly copy catalog specifications and auto-fill Meesho forms</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3.5 p-3 rounded-2xl bg-brand-card dark:bg-brand-card/40 border border-border-subtle hover:border-[#ff477e]/20 shadow-sm transition-all duration-300">
-                <div className="w-10 h-10 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0">
-                  <Sparkles size={18} className="text-[#ff477e]" />
+              <div className="flex items-start gap-4 p-2.5 rounded-xl hover:bg-white/5 dark:hover:bg-white/5 transition-all duration-300 group">
+                <div className="w-8 h-8 rounded-lg bg-pink-500/10 border border-[#ff477e]/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Sparkles size={14} className="text-[#ff477e] group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-txt-p">Smart Field Auto-Mapping</h3>
-                  <p className="text-xs text-txt-m">Automatically maps your custom catalog attributes to Meesho's input fields & dropdowns</p>
+                  <h3 className="text-sm font-semibold text-txt-p group-hover:text-[#ff477e] transition-colors duration-300">Smart Field Auto-Mapping</h3>
+                  <p className="text-xs text-txt-m mt-0.5 leading-relaxed">Automatically maps your custom catalog attributes to Meesho's input fields & dropdowns</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-3.5 p-3 rounded-2xl bg-brand-card dark:bg-brand-card/40 border border-border-subtle hover:border-emerald-500/20 shadow-sm transition-all duration-300">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0">
-                  <Rocket size={18} className="text-emerald-500" />
+              <div className="flex items-start gap-4 p-2.5 rounded-xl hover:bg-white/5 dark:hover:bg-white/5 transition-all duration-300 group">
+                <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Rocket size={14} className="text-emerald-500 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-txt-p">Complete Form Automation</h3>
-                  <p className="text-xs text-txt-m">Eliminate manual typing errors and list products in under 5 seconds</p>
+                  <h3 className="text-sm font-semibold text-txt-p group-hover:text-emerald-500 transition-colors duration-300">Complete Form Automation</h3>
+                  <p className="text-xs text-txt-m mt-0.5 leading-relaxed">Eliminate manual typing errors and list products in under 5 seconds</p>
                 </div>
               </div>
             </motion.div>
@@ -196,17 +256,19 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
             id="hero-buttons-container"
           >
-            <a 
-              href={WHATSAPP_LINK}
-              target="_blank"
-              referrerPolicy="no-referrer"
-              className="px-8 py-4 rounded-xl text-sm font-bold bg-[#ff477e] hover:bg-[#e03165] transition-all duration-300 shadow-xl shadow-[#ff477e]/20 flex items-center justify-center gap-2.5 text-white group"
-              id="hero-cta-whatsapp"
-            >
-              <MessageSquare size={16} className="fill-white/10" />
-              <span>Download Extension (WhatsApp)</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+            <div className="walking-border-wrapper w-full sm:w-auto">
+              <a 
+                href={WHATSAPP_LINK}
+                target="_blank"
+                referrerPolicy="no-referrer"
+                className="relative z-10 w-full px-8 py-4 rounded-[12px] text-sm font-bold bg-gradient-to-r from-[#2E3192] to-[#ff477e] hover:from-[#1F216B] hover:to-[#e03165] transition-all duration-300 shadow-xl flex items-center justify-center gap-2.5 text-white group"
+                id="hero-cta-whatsapp"
+              >
+                <MessageSquare size={16} className="fill-white/10" />
+                <span>Download Extension</span>
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
 
             <a 
               href="#videos"
@@ -229,7 +291,7 @@ export default function Hero() {
           >
             <span className="flex items-center gap-1.5"><ShieldCheck size={14} className="text-emerald-500" /> Safe Local Storage</span>
             <span className="hidden sm:inline h-4 w-px bg-border-subtle" />
-            <span className="flex items-center gap-1.5"><Zap size={14} className="text-[#ff477e]" /> Zero Meesho Bans</span>
+            <span className="flex items-center gap-1.5"><Zap size={14} className="text-[#ff477e]" /> Instant Auto-Fill</span>
             <span className="hidden sm:inline h-4 w-px bg-border-subtle" />
             <span className="flex items-center gap-1.5">No Passwords Required</span>
           </motion.div>
@@ -270,83 +332,221 @@ export default function Hero() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
-              {/* Meesho Form - Representing what gets filled */}
-              <div className="md:col-span-5 bg-white dark:bg-slate-950 p-3 rounded-2xl border border-slate-200/50 dark:border-slate-800 flex flex-col justify-between min-h-[360px]">
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest font-mono">Meesho Form</span>
-                    <span className="text-[8px] bg-slate-100 dark:bg-slate-900 px-1.5 py-0.5 rounded text-slate-500 font-mono">LIVE API</span>
+              {/* Meesho Form - Representing what gets filled - High Fidelity matching user image! */}
+              <div className="md:col-span-5 bg-white dark:bg-slate-950 p-3 rounded-2xl border border-slate-200/50 dark:border-slate-800 flex flex-col justify-between min-h-[380px] max-h-[460px] overflow-y-auto scrollbar-thin">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-1.5">
+                    <span className="text-[10px] font-bold text-slate-800 dark:text-slate-200">Add Product Details</span>
+                    <span className="text-[8px] bg-slate-100 dark:bg-slate-900 px-1.5 py-0.5 rounded text-slate-500 font-mono font-bold">MEESHO PORTAL</span>
                   </div>
 
-                  <div className="space-y-3">
-                    <div>
-                      <label className="text-[9px] text-slate-400 block font-semibold uppercase mb-1">Product Name</label>
-                      <div className="h-8 px-2.5 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center text-[11px] text-slate-800 dark:text-slate-200 font-medium overflow-hidden relative">
-                        {isAutofilling ? (
-                          <motion.span 
-                            initial={{ width: 0 }}
-                            animate={{ width: "100%" }}
-                            transition={{ duration: 1.5 }}
-                            className="text-[#ff477e] truncate"
-                          >
-                            {activeProduct.title}
-                          </motion.span>
-                        ) : autofillProgress === 100 ? (
-                          <span className="text-[#ff477e] truncate">{activeProduct.title}</span>
-                        ) : (
-                          <span className="text-slate-300 dark:text-slate-700">Empty field...</span>
-                        )}
-                        {autofillProgress === 100 && (
-                          <span className="absolute right-1 text-[8px] bg-emerald-100 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-400 px-1 rounded scale-90">Filled</span>
-                        )}
+
+                  {/* Section Title 1 */}
+                  <div>
+                    <h4 className="text-[9.5px] font-bold text-slate-500 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/80 pb-0.5 mb-2">Product, Size and Inventory</h4>
+                    
+                    <div className="grid grid-cols-2 gap-2 text-[9.5px]">
+                      {/* GST Field */}
+                      <div>
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>GST</span>
+                          <span className="text-red-500 font-bold">*</span>
+                          <span className="text-[8px] text-slate-400 cursor-help">(i)</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 flex items-center justify-between text-slate-800 dark:text-slate-200">
+                          <span className={autofillProgress >= 30 ? "text-slate-800 dark:text-slate-200 font-medium font-numbers" : "text-slate-300 dark:text-slate-700"}>
+                            {autofillProgress >= 30 ? activeProduct.gst : "Select GST"}
+                          </span>
+                          <ChevronDown size={10} className="text-slate-400" />
+                        </div>
+                      </div>
+
+                      {/* HSN Code Field */}
+                      <div>
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>HSN Code</span>
+                          <span className="text-red-500 font-bold">*</span>
+                          <span className="text-[8px] text-slate-400 cursor-help">(i)</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 flex items-center justify-between text-slate-800 dark:text-slate-200">
+                          <span className={autofillProgress >= 30 ? "text-slate-800 dark:text-slate-200 font-medium font-numbers" : "text-slate-300 dark:text-slate-700"}>
+                            {autofillProgress >= 30 ? activeProduct.hsn : "Enter HSN"}
+                          </span>
+                          <ChevronDown size={10} className="text-slate-400" />
+                        </div>
+                        <span className="text-[7.5px] text-blue-600 dark:text-blue-400 hover:underline cursor-pointer block mt-0.5">Find Relevant HSN Code &gt;</span>
+                      </div>
+
+                      {/* Net Weight Field */}
+                      <div>
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>Net Weight <span className="text-[8px] text-slate-400 font-normal">(gms)</span></span>
+                          <span className="text-red-500 font-bold">*</span>
+                          <span className="text-[8px] text-slate-400 cursor-help">(i)</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-800 dark:text-slate-200 font-numbers">
+                          {autofillProgress >= 40 ? (
+                            <span className="text-slate-800 dark:text-slate-200 font-medium">{activeProduct.weight}</span>
+                          ) : (
+                            <span className="text-slate-300 dark:text-slate-700 font-light">e.g. 100</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Style Code Field */}
+                      <div>
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>Style code/Product ID</span>
+                          <span className="text-slate-400 text-[7px] font-light">(opt)</span>
+                          <span className="text-[8px] text-slate-400 cursor-help">(i)</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-800 dark:text-slate-200 truncate">
+                          {autofillProgress >= 40 ? (
+                            <span className="text-slate-800 dark:text-slate-200 font-mono text-[8px] font-medium truncate">{activeProduct.styleCode}</span>
+                          ) : (
+                            <span className="text-slate-300 dark:text-slate-700 font-light text-[8px] truncate">e.g. CETA-100</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Product Name Field */}
+                      <div className="col-span-2">
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>Product Name</span>
+                          <span className="text-red-500 font-bold">*</span>
+                          <span className="text-[8px] text-slate-400 cursor-help">(i)</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-800 dark:text-slate-200 truncate relative">
+                          {isAutofilling && autofillProgress < 20 ? (
+                            <span className="text-slate-300 dark:text-slate-700 animate-pulse">Typing product name...</span>
+                          ) : autofillProgress >= 20 ? (
+                            <motion.span 
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              className="text-slate-800 dark:text-slate-200 font-medium truncate"
+                            >
+                              {activeProduct.title}
+                            </motion.span>
+                          ) : (
+                            <span className="text-slate-300 dark:text-slate-700 font-light">Enter product name</span>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Size Selector Field */}
+                      <div className="col-span-2">
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>Size</span>
+                          <span className="text-red-500 font-bold">*</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 flex items-center justify-between text-slate-800 dark:text-slate-200">
+                          <span className={autofillProgress >= 60 ? "text-slate-800 dark:text-slate-200 font-medium" : "text-slate-300 dark:text-slate-700"}>
+                            {autofillProgress >= 60 ? activeProduct.sizes.join(", ") : "Select Size"}
+                          </span>
+                          <ChevronDown size={10} className="text-slate-400" />
+                        </div>
                       </div>
                     </div>
+                  </div>
 
-                    <div>
-                      <label className="text-[9px] text-slate-400 block font-semibold uppercase mb-1">Fabric Material</label>
-                      <div className="h-8 px-2.5 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center text-[11px] text-slate-800 dark:text-slate-200 font-medium overflow-hidden relative">
-                        {isAutofilling && autofillProgress > 30 ? (
-                          <span className="text-[#0ea5e9] truncate">{activeProduct.fabric}</span>
-                        ) : autofillProgress === 100 ? (
-                          <span className="text-[#0ea5e9] truncate">{activeProduct.fabric}</span>
-                        ) : (
-                          <span className="text-slate-300 dark:text-slate-700">Empty field...</span>
-                        )}
-                      </div>
+                  {/* Copy price details checkbox */}
+                  <div className="flex items-center gap-1.5 text-[9.5px] py-1">
+                    <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center transition-all ${autofillProgress >= 70 ? 'bg-[#3b3db6] border-[#3b3db6] text-white' : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950'}`}>
+                      {(autofillProgress >= 70) && <Check size={10} strokeWidth={4} />}
                     </div>
+                    <span className="font-bold text-slate-800 dark:text-slate-200">Copy price details to all sizes</span>
+                  </div>
 
-                    <div>
-                      <label className="text-[9px] text-slate-400 block font-semibold uppercase mb-1">Occasion</label>
-                      <div className="h-8 px-2.5 rounded-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center text-[11px] text-slate-800 dark:text-slate-200 font-medium overflow-hidden relative">
-                        {isAutofilling && autofillProgress > 60 ? (
-                          <span className="text-[#4f46e5] truncate">{activeProduct.occasion}</span>
-                        ) : autofillProgress === 100 ? (
-                          <span className="text-[#4f46e5] truncate">{activeProduct.occasion}</span>
-                        ) : (
-                          <span className="text-slate-300 dark:text-slate-700">Empty field...</span>
-                        )}
+                  {/* Pricing Table */}
+                  <div className="overflow-x-auto border border-slate-100 dark:border-slate-800/80 rounded bg-white dark:bg-slate-950 max-w-full">
+                    <table className="min-w-[380px] text-[8.5px] text-left">
+                      <thead className="bg-slate-50 dark:bg-slate-900 text-slate-500">
+                        <tr>
+                          <th className="p-1 border-r border-b border-slate-100 dark:border-slate-800 font-bold">Size</th>
+                          <th className="p-1 border-r border-b border-slate-100 dark:border-slate-800 font-bold">Meesho Price*</th>
+                          <th className="p-1 border-r border-b border-slate-100 dark:border-slate-800 font-bold">Wrong/Def Returns</th>
+                          <th className="p-1 border-r border-b border-slate-100 dark:border-slate-800 font-bold">MRP*</th>
+                          <th className="p-1 border-b border-slate-100 dark:border-slate-800 font-bold">Inventory*</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="text-slate-800 dark:text-slate-200">
+                          <td className="p-1 border-r border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 font-semibold">{activeProduct.sizes[0] || "Free Size"}</td>
+                          <td className="p-0.5 border-r border-slate-100 dark:border-slate-800">
+                            <div className="h-5 px-1 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-850 dark:text-slate-100 font-bold font-numbers min-w-[50px]">
+                              {autofillProgress >= 80 ? `₹${activeProduct.price}` : ""}
+                            </div>
+                          </td>
+                          <td className="p-0.5 border-r border-slate-100 dark:border-slate-800">
+                            <div className="h-5 px-1 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-400 dark:text-slate-500 font-numbers min-w-[50px]">
+                              {autofillProgress >= 80 ? `₹${activeProduct.price - 25}` : ""}
+                            </div>
+                          </td>
+                          <td className="p-0.5 border-r border-slate-100 dark:border-slate-800">
+                            <div className="h-5 px-1 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-850 dark:text-slate-100 font-numbers min-w-[50px]">
+                              {autofillProgress >= 80 ? `₹${activeProduct.price * 2}` : ""}
+                            </div>
+                          </td>
+                          <td className="p-0.5">
+                            <div className="h-5 px-1 rounded border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center text-slate-850 dark:text-slate-100 font-numbers min-w-[40px]">
+                              {autofillProgress >= 80 ? "150" : ""}
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  {/* Section Title 2: Product Details */}
+                  <div>
+                    <h4 className="text-[9.5px] font-bold text-slate-500 dark:text-slate-400 border-b border-slate-100 dark:border-slate-800/80 pb-0.5 mb-2">Product Details</h4>
+                    
+                    <div className="grid grid-cols-2 gap-2 text-[9.5px]">
+                      {/* Color Field */}
+                      <div>
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>Color</span>
+                          <span className="text-red-500 font-bold">*</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 flex items-center justify-between text-slate-800 dark:text-slate-200">
+                          <span className={autofillProgress >= 90 ? "text-slate-800 dark:text-slate-200 font-medium" : "text-slate-300 dark:text-slate-700"}>
+                            {autofillProgress >= 90 ? activeProduct.color : "Select Color"}
+                          </span>
+                          <ChevronDown size={10} className="text-slate-400" />
+                        </div>
                       </div>
-                    </div>
 
-                    <div>
-                      <label className="text-[9px] text-slate-400 block font-semibold uppercase mb-1">Sizes Available</label>
-                      <div className="flex flex-wrap gap-1">
-                        {autofillProgress === 100 ? (
-                          activeProduct.sizes.map((sz) => (
-                            <span key={sz} className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold font-numbers">{sz}</span>
-                          ))
-                        ) : (
-                          <span className="text-[10px] text-slate-300 dark:text-slate-700">Pending fill...</span>
-                        )}
+                      {/* Generic Name Field */}
+                      <div>
+                        <div className="flex items-center gap-0.5 text-slate-600 dark:text-slate-400 mb-0.5">
+                          <span>Generic Name</span>
+                          <span className="text-red-500 font-bold">*</span>
+                          <span className="text-[8px] text-slate-400 cursor-help">(i)</span>
+                        </div>
+                        <div className="h-7 px-2 rounded border border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/60 flex items-center justify-between text-slate-800 dark:text-slate-200">
+                          <span className={autofillProgress >= 90 ? "text-slate-800 dark:text-slate-200 font-medium truncate" : "text-slate-300 dark:text-slate-700 truncate"}>
+                            {autofillProgress >= 90 ? activeProduct.genericName : "Select Name"}
+                          </span>
+                          <ChevronDown size={10} className="text-slate-400" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-900">
-                  <div className="text-[9px] text-slate-400 font-mono flex items-center justify-between">
-                    <span>Errors: <span className="text-emerald-500 font-bold">0</span></span>
-                    <span>Status: <span className="text-[#ff477e] font-bold">{isAutofilling ? "Auto-Injecting..." : autofillProgress === 100 ? "Ready to Save!" : "Waiting"}</span></span>
+                {/* Footer buttons of form */}
+                <div className="pt-2 mt-3 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-[9px]">
+                  <button className="px-2.5 py-1 font-semibold border border-slate-200 dark:border-slate-800 rounded bg-white dark:bg-slate-900 text-slate-500 hover:text-slate-700 dark:hover:text-slate-350 shadow-sm transition-colors">
+                    Discard Catalog
+                  </button>
+                  <div className="font-mono text-slate-400 font-semibold">
+                    {autofillProgress === 100 ? (
+                      <span className="text-emerald-500 font-bold">100% Filled</span>
+                    ) : isAutofilling ? (
+                      <span className="text-[#ff477e] animate-pulse">Autofilling {autofillProgress}%...</span>
+                    ) : (
+                      <span>Waiting for fill</span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -493,7 +693,7 @@ export default function Hero() {
                       </span>
                     </button>
 
-                    {/* Preview: blue eye icon */}
+                    {/* Capture: blue eye icon */}
                     <button 
                       onClick={triggerPreview}
                       className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-[#0ea5e9]/40 flex flex-col items-center justify-center text-center gap-1.5 transition-all duration-300"
@@ -501,7 +701,7 @@ export default function Hero() {
                       <div className="w-8 h-8 rounded-full bg-[#e0f2fe] dark:bg-sky-950/40 flex items-center justify-center text-[#0ea5e9]">
                         <Eye size={14} />
                       </div>
-                      <span className="text-[10px] font-bold text-slate-800 dark:text-slate-200">Preview</span>
+                      <span className="text-[10px] font-bold text-slate-800 dark:text-slate-200">Capture</span>
                     </button>
 
                     {/* Import: purple upload icon */}
