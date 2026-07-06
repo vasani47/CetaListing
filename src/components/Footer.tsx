@@ -52,7 +52,7 @@ export default function Footer() {
               <Instagram size={16} />
             </a>
             <a 
-              href="mailto:support@cetalisting.com" 
+              href="mailto:support@cetalisting.in" 
               className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-indigo hover:border-brand-indigo/20 transition-all cursor-pointer"
               aria-label="Email Support"
             >

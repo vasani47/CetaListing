@@ -120,7 +120,7 @@ export default function PrivacyPolicy() {
           </p>
           <div className="pt-2 border-t border-border-subtle/40 flex justify-between items-center text-[10px] font-mono">
             <span>CetaListing Support Desk</span>
-            <a href="mailto:support@cetalisting.com" className="text-brand-cyan hover:underline">support@cetalisting.com</a>
+            <a href="mailto:support@cetalisting.in" className="text-brand-cyan hover:underline">support@cetalisting.in</a>
           </div>
         </div>
       </div>

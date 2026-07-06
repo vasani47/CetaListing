@@ -296,7 +296,10 @@ export default function Roadmap() {
                   <Cpu className="text-brand-violet animate-pulse shrink-0" size={14} />
                   <span className="text-[10px] text-txt-m font-mono uppercase">Version 2.0 Cloud Architecture Blueprint</span>
                 </div>
-                <div className="text-[10px] text-brand-violet font-bold font-mono flex items-center gap-1">
+                <div 
+                  onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+                  className="text-[10px] text-brand-violet font-bold font-mono flex items-center gap-1 cursor-pointer hover:opacity-80 active:scale-95 transition-all select-none"
+                >
                   <span>Scroll to Pricing to Join Circle</span>
                   <ArrowRight size={10} />
                 </div>

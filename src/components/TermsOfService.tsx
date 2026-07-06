@@ -115,7 +115,7 @@ export default function TermsOfService() {
           </p>
           <div className="pt-2 border-t border-border-subtle/40 flex justify-between items-center text-[10px] font-mono">
             <span>CetaListing Legal Team</span>
-            <a href="mailto:legal@cetalisting.com" className="text-brand-violet hover:underline">legal@cetalisting.com</a>
+            <a href="mailto:legal@cetalisting.in" className="text-brand-violet hover:underline">legal@cetalisting.in</a>
           </div>
         </div>
       </div>

@@ -1,0 +1,34 @@
+# ==========================================
+# Robots.txt for CetaListing (https://cetalisting.in)
+# Optimized for Google, Bing, and AI Search Engines
+# ==========================================
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/
+Allow: /public/
+Disallow: /*?*             # Block URLs with query parameters to prevent duplicate indexing
+Disallow: /admin/           # Disallow any non-existent admin panels
+Disallow: /api/             # Disallow backend api proxies
+Disallow: /dev/             # Block dev testing paths
+
+# Dedicated permissions for AI Search Engine Crawlers (Optimization for ChatGPT, Claude, Gemini, Perplexity)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Reference the XML Sitemap
+Sitemap: https://cetalisting.in/sitemap.xml

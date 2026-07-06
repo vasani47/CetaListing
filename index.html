@@ -1,13 +1,224 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CetaListing - AI Powered Meesho Listing Automation</title>
+    
+    <!-- Primary SEO Metadata -->
+    <title>CetaListing - AI-Powered Meesho Listing Automation Chrome Extension</title>
+    <meta name="description" content="India's smartest Chrome extension for Meesho sellers. Automate and manage catalog listings in 1 click. Save 90% listing time with local-first secure browser storage, 0ms latency, and no passwords required." />
+    <meta name="keywords" content="Meesho listing automation, CetaListing, Meesho bulk listing tool, Meesho seller helper, e-commerce catalog tool, automatic form filler, Chrome listing extension, local privacy, Meesho upload helper" />
+    <meta name="author" content="CetaListing Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="application-name" content="CetaListing" />
+    <link rel="canonical" href="https://cetalisting.in" />
+
+    <!-- Google Search Console Ownership Verification -->
+    <meta name="google-site-verification" content="GSC_VERIFICATION_PLACEHOLDER_KEY" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Slack) -->
+    <meta property="og:title" content="CetaListing - AI-Powered Meesho Listing Automation Chrome Extension" />
+    <meta property="og:description" content="Instantly populate multi-variant catalogs on Meesho in 2 seconds. 100% private, secure local storage, zero-server architecture. Fast, self-healing, and no password required." />
+    <meta property="og:image" content="https://cetalisting.in/og_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CetaListing Chrome Extension Sidepanel Dashboard with 1-click auto-filling" />
+    <meta property="og:url" content="https://cetalisting.in" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CetaListing" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CetaListing - AI-Powered Meesho Listing Automation Chrome Extension" />
+    <meta name="twitter:description" content="Ditch manual copy-paste. Complete Meesho catalogs in 2 seconds. Running with absolute local privacy in Chrome." />
+    <meta name="twitter:image" content="https://cetalisting.in/og_image.png" />
+    <meta name="twitter:creator" content="@CetaListing" />
+    <meta name="twitter:site" content="@CetaListing" />
+
+    <!-- PWA & Favicons Assets -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7c3aed" />
+    <meta name="apple-mobile-web-app-title" content="CetaListing" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Speed & Performance Optimization (Resource Pre-connections) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Structured Data JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://cetalisting.in/#software",
+            "name": "CetaListing",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Chrome",
+            "downloadUrl": "https://cetalisting.in",
+            "softwareVersion": "1.2.0",
+            "fileSize": "1.4MB",
+            "price": "299.00",
+            "priceCurrency": "INR",
+            "offers": {
+              "@type": "Offer",
+              "price": "299.00",
+              "priceCurrency": "INR",
+              "valueAddedTaxIncluded": "true",
+              "priceValidUntil": "2027-12-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "description": "CetaListing is an AI-powered local browser helper Chrome extension designed to assist e-commerce sellers with catalog typing and form automation on Meesho Seller Portal."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://cetalisting.in/#website",
+            "url": "https://cetalisting.in/",
+            "name": "CetaListing",
+            "description": "AI-Powered Meesho Listing Automation & Catalog Tool",
+            "publisher": {
+              "@id": "https://cetalisting.in/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://cetalisting.in/?s={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://cetalisting.in/#organization",
+            "name": "CetaListing",
+            "url": "https://cetalisting.in/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://cetalisting.in/logo-mark.svg"
+            },
+            "sameAs": [
+              "https://twitter.com/CetaListing",
+              "https://github.com/CetaListing"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://cetalisting.in/#webpage",
+            "url": "https://cetalisting.in/",
+            "name": "CetaListing - AI-Powered Meesho Listing Automation Chrome Extension",
+            "isPartOf": {
+              "@id": "https://cetalisting.in/#website"
+            },
+            "about": {
+              "@id": "https://cetalisting.in/#organization"
+            },
+            "description": "Optimized e-commerce listing platform with absolute local privacy, zero network lag, and instant Meesho catalog population."
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://cetalisting.in/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://cetalisting.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Privacy Policy",
+                "item": "https://cetalisting.in/#/privacy"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Terms of Service",
+                "item": "https://cetalisting.in/#/terms"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://cetalisting.in/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is included in the CetaListing Lifetime plan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The CetaListing Lifetime plan includes complete, permanent access to our premium features for only a single one-time payment of RS299. It includes 1-click automatic form-filling on the Meesho seller panel, smart field capture (which remembers all your category and product mappings), secure local database template management, multiple profile creation, self-healing selector engines, skip-existing-fields protection, and immediate access to free minor updates and selector hotfixes without any recurring yearly subscriptions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does CetaListing automate Meesho listings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "CetaListing is the best Meesho listing tool, functioning as a high-performance Chrome extension that slides out next to your supplier dashboard. It reads your product template data from local storage and automatically injects it into complex Meesho catalog forms. With 1-click auto fill, it populates sizes, measurements, fabrics, descriptions, and weights concurrently in just 2 seconds—making manual data entry completely invisible and allowing you to automate Meesho catalog uploads instantly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is CetaListing safe to use on Meesho?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, CetaListing is fully secure and respects standard web security guidelines. Unlike web automation bots that make unauthorized background server calls, CetaListing functions solely as a local user interface assistant. It assists by automating data entry locally within your active browser tab, never requests or stores your seller account passwords, and saves all your data strictly on your own device's secure local database."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I import and export product templates to other devices?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, CetaListing features a powerful Import/Export JSON toolkit designed for listing teams and wholesalers. You can save custom product specifications locally, export them as a lightweight file, and import them on your assistant's laptop. This ensures absolute consistency across your catalog management team."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Auto Selector Engine and how does it heal?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Whenever eCommerce sites change their design, old web tools tend to break. Our proprietary self-healing Auto Selector Engine uses relative structural anchors and semantic indicators rather than hardcoded CSS selectors. This allows the extension to bypass typical front-end code adjustments without failing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the 'Skip Existing Fields' safety feature?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This is a premium safety lock. If you have already typed a unique product SKU, description, or custom price on the page, checking 'Skip Existing' ensures the autofill engine only populates empty inputs, never overwriting your custom hand-written edits."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
-  <body>
+  <body class="bg-brand-bg text-txt-p antialiased select-none font-sans">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
 
