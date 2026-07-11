@@ -3,7 +3,7 @@ import { Zap, MessageSquare, Menu, X, ArrowUpRight, ChevronDown } from "lucide-r
 import { useState, useRef, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 
-export const WHATSAPP_LINK = "https://wa.me/919999999999?text=Hi,%0AI%20want%20CetaListing%20Extension.";
+export const WHATSAPP_LINK = "https://wa.me/918866814914?text=Hi,%0AI%20want%20CetaListing%20Extension.";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,7 +66,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3.5 group" id="navbar-logo-link">
           <div className="relative h-10 flex items-center justify-center select-none rounded-lg group-hover:scale-105 transition-transform duration-300">
-            <img src="assets/logo-word-l.png" className="h-10 object-contain" alt="Ceta Listing Logo" referrerPolicy="no-referrer" />
+            <img src="assets/CetaLyst-logo.png" className="h-10 object-contain" alt="Ceta Listing Logo" referrerPolicy="no-referrer" />
           </div>
         </a>
 

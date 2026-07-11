@@ -1,5 +1,5 @@
 # ==========================================
-# Robots.txt for CetaListing (https://cetalisting.in)
+# Robots.txt for CetaLyst (https://cetalyst.in)
 # Optimized for Google, Bing, and AI Search Engines
 # ==========================================
 
@@ -31,4 +31,4 @@ User-agent: ClaudeBot
 Allow: /
 
 # Reference the XML Sitemap
-Sitemap: https://cetalisting.in/sitemap.xml
+Sitemap: https://cetalyst.in/sitemap.xml

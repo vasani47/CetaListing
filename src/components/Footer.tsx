@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <a href="#" className="flex items-center gap-3.5 group" id="footer-logo">
               <div className="relative h-10 flex items-center justify-center select-none rounded-lg group-hover:scale-105 transition-transform duration-300">
-                <img src="assets/logo-word-l.png" className=" h-10 object-contain" alt="Ceta Listing Logo" referrerPolicy="no-referrer" />
+                <img src="assets/CetaLyst-logo.png" className=" h-10 object-contain" alt="CetaLyst Logo" referrerPolicy="no-referrer" />
               </div>
             </a>
             <p className="text-xs text-txt-s max-w-sm mt-4 font-light leading-relaxed">
@@ -32,32 +32,49 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex items-center gap-4 mt-6 text-txt-m" id="footer-social-links">
-            <a 
-              href={WHATSAPP_LINK} 
-              target="_blank" 
-              referrerPolicy="no-referrer"
-              className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-cyan hover:border-brand-cyan/20 transition-all cursor-pointer"
-              aria-label="WhatsApp"
-            >
-              <MessageSquare size={16} />
-            </a>
-            <a 
-              href="https://instagram.com" 
-              target="_blank" 
-              referrerPolicy="no-referrer"
-              className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-violet hover:border-brand-violet/20 transition-all cursor-pointer"
-              aria-label="Instagram"
-            >
-              <Instagram size={16} />
-            </a>
-            <a 
-              href="mailto:support@cetalisting.in" 
-              className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-indigo hover:border-brand-indigo/20 transition-all cursor-pointer"
-              aria-label="Email Support"
-            >
-              <Mail size={16} />
-            </a>
+          <div className="flex flex-col gap-4 mt-6">
+            <div className="flex items-center gap-4 text-txt-m" id="footer-social-links">
+              <a 
+                href={WHATSAPP_LINK} 
+                target="_blank" 
+                referrerPolicy="no-referrer"
+                className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-cyan hover:border-brand-cyan/20 transition-all cursor-pointer"
+                aria-label="WhatsApp"
+              >
+                <MessageSquare size={16} />
+              </a>
+              <a 
+                href="https://instagram.com/cetalyst.in" 
+                target="_blank" 
+                referrerPolicy="no-referrer"
+                className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-violet hover:border-brand-violet/20 transition-all cursor-pointer"
+                aria-label="Instagram"
+              >
+                <Instagram size={16} />
+              </a>
+              <a 
+                href="mailto:hello.cetalyst@gmail.com" 
+                className="p-2.5 rounded-lg bg-brand-card border border-border-subtle text-txt-s hover:text-brand-indigo hover:border-brand-indigo/20 transition-all cursor-pointer"
+                aria-label="Email Support"
+              >
+                <Mail size={16} />
+              </a>
+            </div>
+
+            {/* Developer social link */}
+            <div className="text-[10px] text-txt-m font-mono flex items-center gap-1.5">
+              <span>Developer:</span>
+              <a 
+                href="https://instagram.com/er.elit_47" 
+                target="_blank" 
+                rel="noreferrer"
+                referrerPolicy="no-referrer"
+                className="text-brand-violet hover:underline flex items-center gap-1 font-semibold"
+              >
+                <Instagram size={11} />
+                <span>@er.elit_47</span>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -91,7 +108,7 @@ export default function Footer() {
       {/* Made in India Bottom bar with Badge */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-border-subtle flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] text-txt-m font-mono" id="footer-bottom-bar">
         <div className="flex flex-col sm:flex-row items-center gap-4">
-          <span>&copy; {currentYear} CetaListing. All rights reserved.</span>
+          <span>&copy; {currentYear} CetaLyst. All rights reserved.</span>
           <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-[10px] text-brand-cyan font-semibold uppercase tracking-wider font-mono">
             <Zap size={10} className="fill-brand-cyan/20 animate-pulse" />
             Built for Meesho & Marketplace

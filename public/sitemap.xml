@@ -6,7 +6,7 @@
   
   <!-- Main landing page / Home -->
   <url>
-    <loc>https://cetalisting.in/</loc>
+    <loc>https://cetalyst.in/</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Product Features -->
   <url>
-    <loc>https://cetalisting.in/features</loc>
+    <loc>https://cetalyst.in/features</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Pricing plans & Lifetime package -->
   <url>
-    <loc>https://cetalisting.in/pricing</loc>
+    <loc>https://cetalyst.in/pricing</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
 
   <!-- Frequently Asked Questions -->
   <url>
-    <loc>https://cetalisting.in/faq</loc>
+    <loc>https://cetalyst.in/faq</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -38,7 +38,7 @@
 
   <!-- Support and Contact / WhatsApp Desk -->
   <url>
-    <loc>https://cetalisting.in/contact</loc>
+    <loc>https://cetalyst.in/contact</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -46,15 +46,15 @@
 
   <!-- Extension Zip Package Direct Download -->
   <url>
-    <loc>https://cetalisting.in/download</loc>
+    <loc>https://cetalyst.in/download</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- About CetaListing & Manifesto -->
+  <!-- About CetaLyst & Manifesto -->
   <url>
-    <loc>https://cetalisting.in/about</loc>
+    <loc>https://cetalyst.in/about</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -62,7 +62,7 @@
 
   <!-- Privacy Policy (Local-first browser storage declaration) -->
   <url>
-    <loc>https://cetalisting.in/privacy-policy</loc>
+    <loc>https://cetalyst.in/privacy-policy</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -70,7 +70,7 @@
 
   <!-- Terms of Service (Independent tool licensing details) -->
   <url>
-    <loc>https://cetalisting.in/terms</loc>
+    <loc>https://cetalyst.in/terms</loc>
     <lastmod>2026-07-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

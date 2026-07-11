@@ -155,7 +155,7 @@ export default function Features() {
         <div className="bg-zinc-950/80 p-4 rounded-xl border border-purple-400/10 space-y-2 font-mono text-[10px] h-32 flex flex-col justify-between">
           <div className="text-center pt-1">
             <span className="text-[9px] text-zinc-500 block">EXPORT COMPLETED</span>
-            <span className="text-xs text-purple-300 font-bold block mt-1">cetalisting_db.json</span>
+            <span className="text-xs text-purple-300 font-bold block mt-1">cetalyst_db.json</span>
           </div>
           <div className="px-2.5 py-1.5 rounded-lg bg-purple-500/10 border border-purple-500/30 text-[9px] text-purple-300 text-center font-bold">
             Share config with team

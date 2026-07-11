@@ -114,8 +114,8 @@ export default function TermsOfService() {
             For license inquiries, enterprise support, or clarification on terms related to localized scripting and automation, please consult our developer team directly.
           </p>
           <div className="pt-2 border-t border-border-subtle/40 flex justify-between items-center text-[10px] font-mono">
-            <span>CetaListing Legal Team</span>
-            <a href="mailto:legal@cetalisting.in" className="text-brand-violet hover:underline">legal@cetalisting.in</a>
+            <span>CetaLyst Legal Team</span>
+            <a href="mailto:hello.cetalyst@gmail.com" className="text-brand-violet hover:underline">hello.cetalyst@gmail.com</a>
           </div>
         </div>
       </div>

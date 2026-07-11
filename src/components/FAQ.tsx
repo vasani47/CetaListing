@@ -259,7 +259,7 @@ export default function FAQ() {
                   Need Quick Assistance?
                 </span>
                 <h4 className="text-base sm:text-lg font-bold text-txt-p">
-                  Have questions about Ceta Listing?
+                  Have questions about CetaListing?
                 </h4>
                 <p className="text-xs sm:text-sm text-txt-s font-sans font-light">
                   Our friendly support team is ready to assist you with installation, setup, or any usage questions.
@@ -267,7 +267,7 @@ export default function FAQ() {
               </div>
 
               <a 
-                href="https://wa.me/919999999999?text=Hi,%20I%20have%20a%20question%20about%20CetaListing."
+                href="https://wa.me/918866814914?text=Hi,%20I%20have%20a%20question%20about%20CetaListing."
                 target="_blank"
                 rel="noreferrer"
                 referrerPolicy="no-referrer"

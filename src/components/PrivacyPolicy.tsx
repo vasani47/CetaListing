@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
     {
       icon: <Database size={18} className="text-brand-violet" />,
       title: "1. Local-First Architecture & Data Ownership",
-      content: "CetaListing is engineered on a strict local-first architecture. All catalog mappings, product listings, selected categories, and field presets are saved locally on your computer inside your browser's secure sandboxed storage (LocalStorage/IndexedDB). Absolutely none of this data is uploaded, transmitted, or synchronized with any central CetaListing servers."
+      content: "CetaListing is engineered on a strict local-first architecture. All catalog mappings, product listings, selected categories, and field presets are saved locally on your computer inside your browser's secure sandboxed storage (LocalStorage/IndexedDB). Absolutely none of this data is uploaded, transmitted, or synchronized with any central CetaLyst servers."
     },
     {
       icon: <Key size={18} className="text-brand-indigo" />,
@@ -119,8 +119,8 @@ export default function PrivacyPolicy() {
             If you have security-related questions, technical inquiries about extension permissions, or want to understand how local keystroke automation is safely managed in CetaListing, please reach out directly to our product support desk. We operate transparently and are always happy to clarify our sandboxed architecture.
           </p>
           <div className="pt-2 border-t border-border-subtle/40 flex justify-between items-center text-[10px] font-mono">
-            <span>CetaListing Support Desk</span>
-            <a href="mailto:support@cetalisting.in" className="text-brand-cyan hover:underline">support@cetalisting.in</a>
+            <span>CetaLyst Support Desk</span>
+            <a href="mailto:hello.cetalyst@gmail.com" className="text-brand-cyan hover:underline">hello.cetalyst@gmail.com</a>
           </div>
         </div>
       </div>

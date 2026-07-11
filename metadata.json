@@ -1,5 +1,5 @@
 {
-  "name": "CetaListing",
+  "name": "CetaListing - Meesho Automation",
   "description": "AI Powered Meesho Listing Automation. India's smartest Chrome extension for ecommerce sellers.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

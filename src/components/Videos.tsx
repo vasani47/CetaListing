@@ -410,7 +410,7 @@ export default function Videos() {
                     {/* Contact or Order CTA block */}
                     <div className="pt-4 border-t border-border-subtle">
                       <a 
-                        href={`https://wa.me/919999999999?text=${encodeURIComponent(`Hi, I just watched the demo video "${selectedVideoDetails.title}" and would like to learn more about the CetaListing Extension!`)}`}
+                        href={`https://wa.me/918866814914?text=${encodeURIComponent(`Hi, I just watched the demo video "${selectedVideoDetails.title}" and would like to learn more about the CetaListing Extension!`)}`}
                         target="_blank"
                         referrerPolicy="no-referrer"
                         className="w-full flex items-center justify-center gap-2.5 py-3 bg-[#ff477e] hover:bg-[#e03165] rounded-xl text-xs font-bold text-white transition-colors"
@@ -743,7 +743,7 @@ export default function Videos() {
 
                   <div className="mt-8">
                     <a 
-                      href="https://wa.me/919999999999?text=Hi,%0AI%20want%20CetaListing%20Extension."
+                      href="https://wa.me/918866814914?text=Hi,%0AI%20want%20CetaListing%20Extension."
                       target="_blank"
                       referrerPolicy="no-referrer"
                       className="w-full flex items-center justify-center gap-2 py-3 bg-[#7c3aed] hover:bg-[#6d28d9] rounded-xl text-xs font-bold text-white transition-colors"

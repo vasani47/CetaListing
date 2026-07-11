@@ -34,7 +34,7 @@ export default function Manifesto() {
       bgColor: "bg-brand-indigo/10",
       borderColor: "border-brand-indigo/20",
       textHighlight: "text-brand-indigo",
-      desc: "Why should multi-national corporations have all the custom developer tooling? CetaListing provides the exact same automated cataloging horsepower to local wholesalers and manufacturers, free of entry barriers.",
+      desc: "Why should multi-national corporations have all the custom developer tooling? CetaLyst provides the exact same automated cataloging horsepower to local wholesalers and manufacturers, free of entry barriers.",
       fact: "Same enterprise listing speed, 100% free"
     },
     {

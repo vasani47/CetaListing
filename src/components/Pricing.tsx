@@ -6,8 +6,8 @@ export default function Pricing() {
   const yearlyMessage = encodeURIComponent("I want to purchase the Yearly Plan (RS199/year).");
   const lifetimeMessage = encodeURIComponent("I want to purchase the Lifetime Plan (RS299).");
 
-  const WHATSAPP_YEARLY = `https://wa.me/919999999999?text=${yearlyMessage}`;
-  const WHATSAPP_LIFETIME = `https://wa.me/919999999999?text=${lifetimeMessage}`;
+  const WHATSAPP_YEARLY = `https://wa.me/918866814914?text=${yearlyMessage}`;
+  const WHATSAPP_LIFETIME = `https://wa.me/918866814914?text=${lifetimeMessage}`;
 
   const standardFeatures = [
     "1-Click Auto Fill on Meesho Portal",
